@@ -1,3 +1,5 @@
+first run npm install
+
 Run:
 -npm run start or node dist/ to start the server
 -npm run build to build the project
