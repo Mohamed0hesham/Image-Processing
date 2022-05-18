@@ -1,0 +1,11 @@
+Run:
+-npm run start or node dist/ to start the server
+-npm run build to build the project
+-npm run test to run jasmine tests
+-npm run lint to check for the code errors/warnings
+
+routing:
+/api is the main route
+/api/images?name=""&width=""&height="" to test the functionality
+-try entering invalid values or missing parameters in the query
+-try entering the same request many times and watch the console log for not creating new image
