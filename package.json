@@ -1,0 +1,49 @@
+{
+  "name": "jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "lint": "eslint . --ext .ts",
+    "jestTest": "jest",
+    "prettier": "prettier --config prettierrc \"*/**/.ts\" --write",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.3",
+    "@types/lodash": "^4.14.182",
+    "@types/memory-cache": "^0.2.2",
+    "@types/node": "^17.0.31",
+    "@types/sharp": "^0.30.2",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/filesystem": "^0.0.32",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "jasmine": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lodash": "^4.17.21",
+    "memory-cache": "^0.2.0",
+    "nodemon": "^2.0.16",
+    "sharp": "^0.30.4",
+    "supertest": "^6.2.3"
+  }
+}
