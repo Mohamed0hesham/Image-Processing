@@ -23,7 +23,7 @@ function resizeImage(imageSpecs) {
                 width: parseInt(imageSpecs.width),
                 height: parseInt(imageSpecs.height),
             })
-                .toFile(`./thumbImages/${imageSpecs.name}-resized.jpg`);
+                .toFile(`./thumbImages/${imageSpecs.name}-${imageSpecs.width}x${imageSpecs.height}.jpg`);
             return true;
         }
         catch (error) {
