@@ -31,6 +31,8 @@ images.get(
         imageSpecs.width = queiry.width as string
         imageSpecs.height = queiry.height as string
 
+        //accessing the requested image by name to check whether it has a cahced resized version or not
+        //in thumbImages directory
         fsPromises
             .access(
                 `./thumbImages/${imageSpecs.name}-${imageSpecs.width}x${imageSpecs.height}.jpg`
